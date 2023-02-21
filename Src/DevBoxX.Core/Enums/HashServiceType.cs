@@ -9,5 +9,6 @@ namespace DevBoxX.Core.Enums
     public enum HashServiceType
     {
 Md5,
+Sha256,
     }
 }

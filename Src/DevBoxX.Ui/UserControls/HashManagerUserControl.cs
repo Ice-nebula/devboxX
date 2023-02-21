@@ -51,5 +51,19 @@ private IHasherService _hasherService { get; set; }
                 MessageBox.Show(x.Message);
             } //end catch
         }
+
+        private void cbxHashAlgorithm_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var selectHashType = cbxHashAlgorithm.SelectedItem.ToString();
+            var hashType =(HashServiceType) Enum.Parse(typeof(HashServiceType), selectHashType);
+            if (hashType == HashServiceType.Md5 && _hasherService is Md5Service == false)
+            {
+                _hasherService = new Md5Service();
+            } //end if
+            else if (hashType == HashServiceType.Sha256 && _hasherService is Sha256Service == false)
+            {
+                _hasherService = new Sha256Service();
+            } //end if
+        }
     }
 }

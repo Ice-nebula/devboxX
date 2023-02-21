@@ -72,12 +72,12 @@
             // 
             this.cbxHashAlgorithm.AccessibleName = "Hash algorithm";
             this.cbxHashAlgorithm.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cbxHashAlgorithm.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.cbxHashAlgorithm.FormattingEnabled = true;
             this.cbxHashAlgorithm.Location = new System.Drawing.Point(201, 0);
             this.cbxHashAlgorithm.Name = "cbxHashAlgorithm";
             this.cbxHashAlgorithm.Size = new System.Drawing.Size(121, 21);
             this.cbxHashAlgorithm.TabIndex = 3;
+            this.cbxHashAlgorithm.SelectedIndexChanged += new System.EventHandler(this.cbxHashAlgorithm_SelectedIndexChanged);
             // 
             // btnHash
             // 

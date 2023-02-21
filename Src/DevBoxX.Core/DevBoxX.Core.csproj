@@ -45,6 +45,7 @@
     <Compile Include="Interfaces\IHasherService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\HashServices\Md5Service.cs" />
+    <Compile Include="Services\HashServices\Sha256Service.cs" />
     <Compile Include="ServiceType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
