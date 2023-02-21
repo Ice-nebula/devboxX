@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DevBoxX.Core.Services.HashServices
 {
-    public class Md5Service : IHasher
+    public class Md5Service : IHasherService
     {
         public string Hash(string message)
         {

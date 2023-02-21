@@ -52,7 +52,9 @@
             this.lvToolsList.Location = new System.Drawing.Point(44, 0);
             this.lvToolsList.Name = "lvToolsList";
             this.lvToolsList.Size = new System.Drawing.Size(120, 450);
+            this.lvToolsList.Sorted = true;
             this.lvToolsList.TabIndex = 1;
+            this.lvToolsList.SelectedIndexChanged += new System.EventHandler(this.lvToolsList_SelectedIndexChanged);
             // 
             // plTools
             // 
@@ -64,6 +66,7 @@
             // 
             // MainForm
             // 
+            this.AccessibleName = "dev boxX";
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
@@ -72,7 +75,8 @@
             this.Controls.Add(this.lvToolsList);
             this.Controls.Add(this.lbToolsList);
             this.Name = "MainForm";
-            this.Text = "MainForm";
+            this.Text = "dev boxX";
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

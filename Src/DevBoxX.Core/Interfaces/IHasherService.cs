@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DevBoxX.Core.Interfaces
 {
-    public interface IHasher
+    public interface IHasherService
     {
         string Hash(string message);
 

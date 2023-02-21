@@ -41,9 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interfaces\IHasher.cs" />
+    <Compile Include="Enums\HashServiceType.cs" />
+    <Compile Include="Interfaces\IHasherService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\HashServices\Md5Service.cs" />
+    <Compile Include="ServiceType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
